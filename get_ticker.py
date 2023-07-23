@@ -11,4 +11,3 @@ def get_dataframe_ticker(stock_name, year):
 
     return stock_dataframe
 
-print(get_dataframe_ticker("VALE3", "2022"))

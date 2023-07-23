@@ -48,7 +48,8 @@ def plot_graphic(stock_name, year):
     plt.plot(df["Sinal"], label="Sinal")
     plt.scatter(sinais_de_compra_dia, sinais_de_compra_valor, color='green', marker='o')
     plt.scatter(sinais_de_venda_dia, sinais_de_venda_valor, color="red", marker='o')
-    plt.show()
+    plt.title()
+    plt.savefig()
 
 def get_trade_history(stock_name, year):
 
