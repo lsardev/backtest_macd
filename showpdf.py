@@ -1,3 +1,4 @@
+import os
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from reportlab.lib import colors
@@ -8,6 +9,7 @@ from get_graphic_history import get_trade_history
 from return_pct import get_pct_year
 
 def generate_pdf(output_file, ticker, year):
+
     doc = SimpleDocTemplate(output_file, pagesize=letter)
 
     #centralizando paragrafo
@@ -52,4 +54,4 @@ def generate_pdf(output_file, ticker, year):
     c.save()
 
 
-generate_pdf("pdf_example_23", "VALE3", "2022")
+generate_pdf("pdf_example_24", "VALE3", "2019")
