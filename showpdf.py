@@ -1,3 +1,4 @@
+import os
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from reportlab.lib import colors
@@ -8,7 +9,14 @@ from get_graphic_history import get_trade_history
 from return_pct import get_pct_year
 
 def generate_pdf(output_file, ticker, year):
-    doc = SimpleDocTemplate(output_file, pagesize=letter)
+
+    pdf_folder = "pdfs"
+    if not os.path.exists(pdf_folder):
+        os.makedirs(pdf_folder)
+
+    output_path = os.path.join(pdf_folder, output_file + ".pdf")
+    doc = SimpleDocTemplate(output_path, pagesize=letter)
+
 
     #centralizando paragrafo
     def draw_centered_string(c, text, y):
@@ -16,7 +24,7 @@ def generate_pdf(output_file, ticker, year):
         x = (letter[0] - width) / 2
         c.drawString(x, y, text)
 
-    c = canvas.Canvas(output_file)
+    c = canvas.Canvas(output_path)
 
     #Título do texto
     paragraph_text = "Análise da estratégia MACD na ação {} no ano {}".format(ticker, year)
@@ -52,4 +60,4 @@ def generate_pdf(output_file, ticker, year):
     c.save()
 
 
-generate_pdf("pdf_example_23", "VALE3", "2022")
+generate_pdf("pdf_example_26", "VALE3", "2022")
