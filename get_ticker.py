@@ -11,3 +11,4 @@ def get_dataframe_ticker(stock_name, year):
 
     return stock_dataframe
 
+

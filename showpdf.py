@@ -59,5 +59,5 @@ def generate_pdf(output_file, ticker, year):
 
     c.save()
 
+    return '{}.pdf'.format(output_file)
 
-generate_pdf("pdf_example_26", "VALE3", "2022")

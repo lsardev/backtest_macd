@@ -33,5 +33,12 @@ def show_price_graphic(ticker, year):
     caminho_arquivos = os.path.join(pasta_destino, nome_arquivo)
 
     plt.savefig(caminho_arquivos, format="png")
+    plt.show()
+
+    df = []
+    sinals = []
 
     return caminho_arquivos
+
+show_price_graphic("VALE3", 2021)
+show_price_graphic("VALE3", 2022)
