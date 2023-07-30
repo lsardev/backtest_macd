@@ -9,4 +9,3 @@ def get_grow_2018_2022(ticker):
 
     return [ticker, g2018, g2019, g2020, g2021, g2022]
 
-print(get_grow_2018_2022("VALE3"))
