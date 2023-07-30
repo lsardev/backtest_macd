@@ -16,11 +16,9 @@ O calculo da MACD é feito por meio da diferença entre a media móvel curta e a
 
 Descobrimos então os sinais de compra e venda das ações e quanto rendeu a ação em cada ano e colocamos em um grafico no pdf:
 
-<img src="/pdfs/VALE3-2022.pdf">
+<img src="/sinais/printgrafico.png">
 
 Em nosso algoritmo colocamos também uma funcionalidade que retorna o crescimento das ações nos últimos 5 anos antes do ano atual (2023):
-
-<img src="/pdfs_2018_2020/VALE3_2018_2020.pdf">
 
 ## Lembrando
 Não estou fazendo nenhuma recomendação de estratégia para fazer trade, apenas estou mostrando com fins educacionais como algoritmos podem ajudar a tomar decisões no mercado financeiro.
