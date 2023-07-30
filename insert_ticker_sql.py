@@ -1,6 +1,7 @@
 import sqlite3
 from get_grow_2018_2022 import get_grow_2018_2022
 
+#adicionando a ação no banco de dados sql
 def insert_into_sql_table(ticker, sector):
 
     try:
