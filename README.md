@@ -20,7 +20,7 @@ Descobrimos então os sinais de compra e venda das ações e quanto rendeu a aç
 
 Em nosso algoritmo colocamos também uma funcionalidade que retorna o crescimento das ações nos últimos 5 anos antes do ano atual (2023):
 
-<img src="/pdfs_2018_2020/VALE3_2018_2020">
+<img src="/pdfs_2018_2020/VALE3_2018_2020.pdf">
 
 ## Lembrando
 Não estou fazendo nenhuma recomendação de estratégia para fazer trade, apenas estou mostrando com fins educacionais como algoritmos podem ajudar a tomar decisões no mercado financeiro.
